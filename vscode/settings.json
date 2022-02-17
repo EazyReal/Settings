@@ -1,0 +1,37 @@
+{
+  "workbench.colorTheme": "Darcula",
+  // prettier
+  "prettier.semi": false,
+  "explorer.confirmDelete": true,
+  "window.zoomLevel": 1,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "diffEditor.wordWrap": "on",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "svelte.enable-ts-plugin": true,
+  // latex
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.message.warning.show": false,
+  "latex-workshop.latex.outDir": "%DIR%",
+  // synctex
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+  // latex building
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": true,
+  // latex cleaning
+  "latex-workshop.latex.autoClean.run":"onBuilt", // when debugging this should be false
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+}
