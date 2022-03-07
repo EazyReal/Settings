@@ -33,3 +33,15 @@ hackmd2pdf() {
     echo completed
 }
 
+md2pdf() {
+    pandoc $1 -o $2 \
+    --pdf-engine=pdflatex \
+    --highlight-style=monochrome \
+    -V 'fontsize: 12pt' \
+    -V 'papersize: A4' \
+    -V 'urlcolor: blue' \
+    -V 'date: \today{}' \
+    -V 'documentclass:$FORMAT' \
+    -V 'geometry:margin=3.8cm'
+}
+
