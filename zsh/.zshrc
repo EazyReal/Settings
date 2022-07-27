@@ -74,19 +74,34 @@ ZSH_THEME="avit" # newline, full path, git branch, minimal
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    # best
+    you-should-use
     git
     dotenv
     last-working-dir
-    macos
-    web-search
-    brew
     history
-    sudo
-    extract
+    history-substring-search
+    z
+    dirhistory
+    jsontools
 
+    # community but good (need install by cloning into dir)
     zsh-autosuggestions
     zsh-syntax-highlighting
-    zsh-z
+
+    # often
+    macos
+    web-search
+
+    # helpful
+    sudo
+    extract
+    copypath
+    copyfile
+    brew
+
+    # specific
+    poetry
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -118,3 +133,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias upzsh="source ~/.zshrc"
 alias gac="git add -A; git commit -m "
+
+[ -f "/Users/maxwill/.ghcup/env" ] && source "/Users/maxwill/.ghcup/env" # ghcup-env
